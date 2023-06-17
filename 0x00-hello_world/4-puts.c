@@ -1,2 +1,7 @@
 #!/bin/bash
-gcc -xc - <<< '#include <stdio.h> int main(void) { puts("Programming is like building a multilingual puzzle"); return 0; }' && ./a.out
+#include <stdio.h>
+
+int main(void) {
+    puts("Programming is like building a multilingual puzzle");
+    return 0;
+}
