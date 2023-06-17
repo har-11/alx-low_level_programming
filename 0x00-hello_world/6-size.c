@@ -1,12 +1,10 @@
 #include <stdio.h>
 
 /*
- * Main - size of
+ * main - size of
  **
  * Return 0
  */
-
-#include <stdio.h>
 
 int main(void)
 {
