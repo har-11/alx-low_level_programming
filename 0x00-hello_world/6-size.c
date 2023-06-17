@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /*
- * main - size of
+ * main - Entry point
  **
  * Return 0
  */
