@@ -1,5 +1,6 @@
 #include <stdio.h>
-/* main - The Entry point
+/**
+ * main - The Entry point
  * *
  * Return: Always = (0)
  */
