@@ -1,4 +1,4 @@
-#include <main.h>
+#include <stdio.h>
 
 /**
  * main - Entry point
@@ -8,10 +8,9 @@
 
 int main(void)
 {
-	int = i
-{
-	_putchar("i");
-}
+
+	putchar("_putchar");
+
 	_putchar("\n");
 	return (0);
 }
