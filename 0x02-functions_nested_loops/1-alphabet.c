@@ -1,19 +1,15 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
- *
- * Return: Always 0
+ * print_alphabet - print all alphabet in lawercase
  */
 
-int main(void)
+void print_alphabet(void)
 {
-char c;
+	char letter;
 
-	for (c = 'a' ; c <= 'z' ; c++)
-	{
-	putchar(c);
-	}
-	putchar('\n');
-	return (0);
+	for (letter = 'a'; letter <= 'z'; letter++)
+		_putchar(letter);
+
+	_putchar('\n');
 }
