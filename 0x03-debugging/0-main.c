@@ -6,7 +6,6 @@
 */
 
 int main(void)
-int main(positive_or_negative)
 {
 	int i;
 
