@@ -7,23 +7,26 @@
   * Return: Always 0
   */
 
-void swap_int(int *a, int *b)
+
+void swap_int(int *a, int *b);
+
+int main()
 {
-	int *temp = a;
-	a = b;
-	b = temp;
+	int a = 5;
+    	int b = 10;
+
+    	printf("Before swap: a = %d, b = %d\n", a, b);
+
+    	swap_int(&a, &b);
+
+    	printf("After swap: a = %d, b = %d\n", a, b);
+	
+    	return 0;
 }
 
-	int main()
+void swap_int(int *a, int *b)
 {
-	int *a = 5;
-	int *b = 10;
-	swap_int(a, b);
-	printf("Before swap: a = %d, b = %d\n", a, b);
-
-	swap_int(&a, &b);
-
-	printf("After swap: a = %d, b = %d\n", a, b);
-
-	return (0);
+	int temp = *a;
+ 	*a = *b;
+	*b = temp;
 }
