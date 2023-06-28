@@ -26,15 +26,3 @@ int _atoi(char *s)
 
     return result * sign;
 }
-
-int main(void)
-{
-    char str[] = " ------++++++-----+++++--98";
-
-    int num = _atoi(str);
-
-    printf("Number: %d\n", num);
-
-    return 0;
-}
-
