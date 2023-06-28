@@ -1,43 +1,40 @@
 #include "main.h"
+#include <stdio.h>
 
-/**
- * _atoi - Converts a string to an integer.
- * @s: Pointer to the string.
- *
- * Return: The converted integer.
- */
 int _atoi(char *s)
 {
     int sign = 1;  /* Variable to store the sign of the number */
     int result = 0;  /* Variable to store the converted integer */
+    int i = 0;  /* Index for iterating through the string */
 
     /* Check for sign */
-    if (*s == '-')
+    while (s[i] == '-' || s[i] == '+')
     {
-        sign = -1;
-        s++;
-    }
-    else if (*s == '+')
-    {
-        s++;
+        if (s[i] == '-')
+            sign *= -1;
+
+        i++;
     }
 
     /* Convert string to integer */
-    while (*s != '\0')
+    while (s[i] >= '0' && s[i] <= '9')
     {
-        if (*s >= '0' && *s <= '9')
-        {
-            /* Update the result by multiplying it by 10 and adding the digit */
-            result = result * 10 + (*s - '0');
-        }
-        else
-        {
-            /* If a non-digit character is encountered, stop converting */
-            break;
-        }
-
-        s++;
+        /* Update the result by multiplying it by 10 and adding the digit */
+        result = result * 10 + (s[i] - '0');
+        i++;
     }
 
     return result * sign;
 }
+
+int main(void)
+{
+    char str[] = " ------++++++-----+++++--98";
+
+    int num = _atoi(str);
+
+    printf("Number: %d\n", num);
+
+    return 0;
+}
+
