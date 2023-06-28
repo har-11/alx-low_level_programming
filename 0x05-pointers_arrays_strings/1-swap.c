@@ -8,11 +8,17 @@
   */
 
 void swap_int(int *a, int *b)
-
 {
-	int a = 5;
-	int b = 10;
+	int *temp = a;
+	a = b;
+	b = temp;
+}
 
+	int main()
+{
+	int *a = 5;
+	int *b = 10;
+	swap_int(a, b);
 	printf("Before swap: a = %d, b = %d\n", a, b);
 
 	swap_int(&a, &b);
