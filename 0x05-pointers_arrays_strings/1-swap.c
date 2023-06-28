@@ -5,6 +5,8 @@
  * swap_int - swap code
  * @n: pointers
  *
+ * @a :pointer to first integer
+ * @b :pointer to second integer
  * Return: Always 0
  */
 
