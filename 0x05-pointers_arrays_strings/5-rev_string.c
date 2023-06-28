@@ -20,8 +20,8 @@ void rev_string(char *s)
 }
 
 	/* Reverse the string*/
-	start = 0;	
-	end = length - 1;	
+	start = 0;
+	end = length - 1;
 	while (start < end)
 {
 	/* Swap characters at start and end positions*/
