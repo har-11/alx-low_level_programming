@@ -21,7 +21,7 @@ void print_rev(char *s)
 	/*Print the characters in reverse order*/
 	for (i = length - 1; i >= 0; i--)
 {
-	putchar(*(s + i));
+	putchar(s[i]);
 }
 
 	putchar('\n');
