@@ -1,19 +1,14 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * main - reset to
+ * reset_to_98 - check the code
+ * @n: pointers
  *
- * Return: always (0)
+ * Return: always 0
  */
 
-
-int main(void)
+void(reset_to_98(int n);
 {
-	int number = 5;
-
-	printf("Before reset: %d\n", number);
-	reset_to_98(&number);
-	printf("After reset: %d\n", number);
-	return (0);
+	*n = 98;
 }
-
