@@ -13,23 +13,23 @@ void rev_string(char *s)
     int end = 0;
     char temp;
 
-    // Calculate the length of the string
+    /* Calculate the length of the string*/
     while (s[length] != '\0')
     {
         length++;
     }
 
-    // Reverse the string
+    /* Reverse the string*/
     start = 0;
     end = length - 1;
     while (start < end)
     {
-        // Swap characters at start and end positions
+        /* Swap characters at start and end positions*/
         temp = s[start];
         s[start] = s[end];
         s[end] = temp;
 
-        // Move start and end positions towards the center
+        /* Move start and end positions towards the center*/
         start++;
         end--;
     }
