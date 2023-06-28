@@ -12,11 +12,10 @@ void print_rev(char *s)
 	int i;
 
 	/* Calculate the length of the string*/
-	while (*s != '\0')
-	{
-	length++;
-	s++;
-	}
+	while (s[length] != '\0')
+{
+		length++;
+}
 
 	/*Print the characters in reverse order*/
 	for (i = length - 1; i >= 0; i--)
