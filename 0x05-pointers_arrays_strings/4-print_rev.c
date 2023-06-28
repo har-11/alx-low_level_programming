@@ -1,19 +1,27 @@
 #include "main.h"
 #include <stdio.h>
 
-void print_rev(char *s) {
-    int length = 0;
+/**
+ * print_rev - reverse
+ *@s: pointer
+ */
 
-    // Calculate the length of the string
-    while (*s != '\0') {
-        length++;
-        s++;
-    }
+void print_rev(char *s)
+{
+	int length = 0;
 
-    // Print the characters in reverse order
-    for (int i = length - 1; i >= 0; i--) {
-        putchar(*(s + i));
-    }
+	/* Calculate the length of the string*/
+	while (*s != '\0')
+	{
+	length++;
+	s++;
+	}
 
-    putchar('\n');
+	/*Print the characters in reverse order*/
+	for (int i = length - 1; i >= 0; i--)
+{
+	putchar(*(s + i));
+}
+
+	putchar('\n');
 }
