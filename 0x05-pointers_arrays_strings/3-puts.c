@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- *void_puts - puts
+ *_puts - puts
  *@str: pointers
  *
  *_puts - Prints a string, followed by a new line, to stdout.
