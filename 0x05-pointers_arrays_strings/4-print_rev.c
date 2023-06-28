@@ -26,12 +26,3 @@ void print_rev(char *s)
 
 	putchar('\n');
 }
-
-int main()
-{
-	char *str = "Hello, World!";
-
-    	print_rev(str);
-
-	return 0;
-}
