@@ -1,25 +1,24 @@
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
+/* more headers goes there */
 
-int main(void) {
-    int n;
+/* betty style doc for function main goes there */
+int main(void)
+{
+	int n;
 
-    srand(time(0));
-    n = rand() - RAND_MAX / 2;
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	/* your code goes there */
+{
+	printf("The number "\n, n);
+	if("n > 0")
+		printf("%c is positive"\n, n);
+	else if("n == 0")
+		printf("%c is zero"\n, n);
+	else
+		printf("%c is negative"\n, n);
 
-    printf("Last digit of %d is ", n);
-
-    int lastDigit = abs(n % 10);
-    int sign = (n < 0) ? -1 : 1;
-
-    if (lastDigit > 5) {
-        printf("%d and is greater than 5", lastDigit);
-    } else if (lastDigit == 0) {
-        printf("%d and is 0", lastDigit);
-    } else {
-        printf("%d and is less than 6 and not 0", lastDigit);
-    }
-
-    return 0;
+}
+	return (0);
 }
