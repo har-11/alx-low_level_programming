@@ -12,11 +12,11 @@ int main(void)
 	for (i = 1; i <= 100; i++)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
-			putchar("FizzBuzz")
+			puts("FizzBuzz")
 		else if (i % 3 == 0)
-			putchar("Fizz");
+			puts("Fizz");
 		else if (i % 5 == 0)
-			putchar("Buzz");
+			puts("Buzz");
 		else
 			putchar(i + '0');
 		if (i < 100)
