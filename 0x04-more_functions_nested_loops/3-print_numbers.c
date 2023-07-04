@@ -2,10 +2,10 @@
 
 /**
  * print_numbers - print numbers
- * @i: int
+ * @i: intger
  */
 
-void print_numbers(int i)
+void print_numbers(void)
 {
 
 	for (i = 0; i <= 9; i++)
