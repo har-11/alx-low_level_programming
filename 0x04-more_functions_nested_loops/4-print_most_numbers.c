@@ -11,7 +11,7 @@ void print_most_numbers(void)
 
 	for (i = 0; i < 9; i++)
 	{
-		for (i != 2 || i != 4)
+		for (i != 2 && i != 4)
 		{
 			putchat(i + '0');
 		}
