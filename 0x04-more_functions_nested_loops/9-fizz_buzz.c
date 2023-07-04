@@ -22,5 +22,6 @@ int main(void)
 		if (i < 100)
 			putchar(' ');
 	}
+	putchat('\n');
 	return (0);
 }
