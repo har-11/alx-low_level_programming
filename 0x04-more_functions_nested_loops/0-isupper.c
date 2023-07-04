@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * main - entry point
- *
+ *_isupper - verifiying uppercase
+ *@c: function
  * Return: Always 0
  */
 
@@ -10,6 +10,6 @@ int _isupper(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 		return (1);
-	else 
+	else
 		return (0);
 }
